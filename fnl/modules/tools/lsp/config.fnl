@@ -83,7 +83,11 @@
 ;; Load lsp
 (let [servers lsp-servers]
   (each [_ server (ipairs servers)]
-    ((. (. lsp server) :setup) defaults)))
+    (nyoom-module-p! completion.coq
+      ((. (. lsp server) :setup) (. (require :coq) :setup) defaults))
+    (nyoom-module-p! completion.cmp
+      ((. (. lsp server) :setup) defaults))
+  ))
 
 ;; for trickier servers you can change up the defaults
 (nyoom-module-p! lang.lua

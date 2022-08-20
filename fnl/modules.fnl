@@ -3,16 +3,17 @@
 ;;; fnl/modules.fnl 
 ;; NOTE: Any module with a TODO either isn't ready or hasn't been implemented yet.
 
-(nyoom! completion.cmp             ; the ultimate code completion backend
+(nyoom! ;;completion.cmp           ; the ultimate code completion backend
         ;;completion.compleet      ; TODO the *other* ultimate code completion backend
         ;;completion.fzf-lua       ; TODO a search engine for love and life
+        completion.coq             ; fast as FUCK nvim completion
         completion.telescope       ; the search engine of the future
 
         ui.nyoom                   ; what makes Nyoom look the way it does
-        ;;ui.dashboard               ; a nifty splash screen for neovim
-        ;;ui.nyoom-quit            ; buggy, terrible implementation of doom-quit. 
+        ;;ui.dashboard             ; a nifty splash screen for neovim
+        ;;ui.nyoom-quit              ; buggy, terrible implementation of doom-quit. 
         ui.hydra                   ; the heads don't byte
-        ;;ui.indent-guides         ; highlighted indent columns
+        ui.indent-guides           ; highlighted indent columns
         ui.modeline                ; snazzy, nano-emacs-inspired modeline
         ;;ui.nvimtree              ; a project drawer, like NERDTree for vim
         ;;ui.tabs                  ; a tab bar for Neovim
@@ -55,7 +56,7 @@
         ;;lang.julia               ; a better, faster MATLAB
         lang.lua                   ; one-based indices? one-based indices
         lang.markdown              ; writing docs for people to ignore
-        lang.neorg               ; organize your plain life in plain text
+        lang.neorg                 ; organize your plain life in plain text
         ;;lang.nix                 ; I hereby declare "nix geht mehr!"
         lang.rust                  ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
         ;;lang.sh                  ; she sells {ba,z,fi}sh shells on the C xor
