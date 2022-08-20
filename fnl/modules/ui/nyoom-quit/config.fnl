@@ -13,12 +13,7 @@
                       "This isn't brave. It's murder. What did I ever do to you?"
                       "I'm the man who's going to burn your house down! With the lemons!"
                       "Okay, look. We've both said a lot of things you're going to regret..."
-                      ;; Custom
-                      "Go ahead and leave. I'll convert your code to Fennel!"
-                      "Neovim will remember that."
-                      "Please don't leave, otherwise I'll tell packer to break your setup on next launch!"
-                      "It's not like I'll miss you or anything, b-baka!"
-                      "You are *not* prepared!"])
+                      ])
 (λ going-to-quit []
   (var open-buffers 0)
   (for [buf (vim.fn.bufnr 1) (vim.fn.bufnr "$")]
