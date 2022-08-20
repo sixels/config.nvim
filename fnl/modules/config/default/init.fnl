@@ -3,5 +3,5 @@
 (nyoom-module! config.default)
 
 ;; Core packages
-(use-package! :wbthomason/packer.nvim {:opt true})
+(use-package! :wbthomason/packer.nvim)
 (use-package! :nvim-lua/plenary.nvim {:module :plenary})

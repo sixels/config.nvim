@@ -5,10 +5,14 @@
           (autocmd! VimLeave * '(set! guicursor ["a:ver100-blinkon0"])))
 
 ;; Replace Packer usage
-(command! PackerSync '(warn! "Please use the bin/nyoom script instead of PackerSync"))
-(command! PackerInstall '(warn! "Please use the bin/nyoom script instead of PackerInstall"))
-(command! PackerUpdate '(warn! "Please use the bin/nyoom script instead of PackerUpdate"))
-(command! PackerCompile '(warn! "Please use the bin/nyoom script instead of PackerCompile"))
+; (command! PackerSync '(warn! "Please use the bin/nyoom script instead of PackerSync"))
+; (command! PackerInstall '(warn! "Please use the bin/nyoom script instead of PackerInstall"))
+; (command! PackerUpdate '(warn! "Please use the bin/nyoom script instead of PackerUpdate"))
+; (command! PackerCompile '(warn! "Please use the bin/nyoom script instead of PackerCompile"))
+(command! PackerSync "lua require 'packages' require('packer').sync()")
+(command! PackerInstall "lua require 'packages' require('packer').install()")
+(command! PackerCompile "lua require 'packages' require('packer').compile()")
+(command! PackerUpdate "lua require 'packages' require('packer').update()")
 (command! PackerStatus "lua require 'packages' require('packer').status()")
 
 ;; improve updatetime for quicker refresh + gitsigns
