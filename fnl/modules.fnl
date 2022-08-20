@@ -9,7 +9,7 @@
         completion.telescope       ; the search engine of the future
 
         ui.nyoom                   ; what makes Nyoom look the way it does
-        ui.dashboard               ; a nifty splash screen for neovim
+        ;;ui.dashboard               ; a nifty splash screen for neovim
         ;;ui.nyoom-quit            ; buggy, terrible implementation of doom-quit. 
         ui.hydra                   ; the heads don't byte
         ;;ui.indent-guides         ; highlighted indent columns
@@ -55,8 +55,8 @@
         ;;lang.julia               ; a better, faster MATLAB
         lang.lua                   ; one-based indices? one-based indices
         lang.markdown              ; writing docs for people to ignore
-        ;;lang.neorg               ; organize your plain life in plain text
-        lang.nix                   ; I hereby declare "nix geht mehr!"
+        lang.neorg               ; organize your plain life in plain text
+        ;;lang.nix                 ; I hereby declare "nix geht mehr!"
         lang.rust                  ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
         ;;lang.sh                  ; she sells {ba,z,fi}sh shells on the C xor
 
