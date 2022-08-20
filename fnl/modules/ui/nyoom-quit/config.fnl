@@ -12,8 +12,8 @@
                       "I don't know what you think you are doing, but I don't like it. I want you to stop."
                       "This isn't brave. It's murder. What did I ever do to you?"
                       "I'm the man who's going to burn your house down! With the lemons!"
-                      "Okay, look. We've both said a lot of things you're going to regret..."
-                      ])
+                      "Okay, look. We've both said a lot of things you're going to regret..."])
+
 (λ going-to-quit []
   (var open-buffers 0)
   (for [buf (vim.fn.bufnr 1) (vim.fn.bufnr "$")]
